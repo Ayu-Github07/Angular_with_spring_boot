@@ -1,0 +1,50 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+.table {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+table {
+  margin-top: 40px;
+  position: relative;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 2px 15px rgba(160, 160, 160, 0.7);
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  background-color: rgb(255, 254, 254);
+
+}
+
+td,
+th {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+th {
+  background-color: #4964ff;
+  color: #fafafa;
+  font-family: 'Open Sans', Sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+
+}
+
+tr {
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}

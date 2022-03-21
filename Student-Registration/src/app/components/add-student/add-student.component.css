@@ -1,0 +1,13 @@
+mat-form-field {
+  margin: 5px 20px 15px 0px;
+  width: max-content;
+}
+
+#id {
+  display: none;
+}
+
+.container {
+  scroll-behavior: smooth;
+
+}

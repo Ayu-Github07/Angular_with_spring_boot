@@ -1,0 +1,71 @@
+<h2 mat-dialog-title>{{title}}</h2>
+
+<form [formGroup]="studentForm">
+    <div class="container">
+        <div>
+            <!-- id -->
+            <div id="id">
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter Id</mat-label>
+                    <input formControlName="id" matInput placeholder="Id">
+                </mat-form-field>
+            </div>
+            <!-- student name -->
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Student's Name</mat-label>
+                <input formControlName="name" matInput placeholder="Student's Name">
+            </mat-form-field>
+
+            <!-- student email -->
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Student's Email Id</mat-label>
+                <input formControlName="email" matInput placeholder="Student's Email Id">
+            </mat-form-field>
+
+            <!-- student roll no -->
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Student's Roll No.</mat-label>
+                <input formControlName="rollno" matInput placeholder="Student's Roll No.">
+            </mat-form-field>
+
+            <!-- student mobile no -->
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Student's Mobile No.</mat-label>
+                <input formControlName="mobile" matInput placeholder="Student's Mobile No.">
+            </mat-form-field>
+
+            <!-- student aadhar -->
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Student's Aadhar Number</mat-label>
+                <input formControlName="aadhar" matInput placeholder="Student's Aadhar Number">
+            </mat-form-field>
+
+            <!-- student address -->
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Student's Address</mat-label>
+                <input formControlName="address" matInput placeholder="Student's Address">
+            </mat-form-field>
+
+            <!-- student aadhar -->
+            <mat-form-field appearance="outline">
+                <mat-label>Enter the Pincode</mat-label>
+                <input formControlName="pincode" matInput placeholder="Pincode">
+            </mat-form-field>
+
+            <!-- gender -->
+            <mat-form-field appearance="outline">
+                <mat-label>Gender</mat-label>
+                <mat-select formControlName="gender" placeholder="Category">
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                    <mat-option value="Others">Others</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+</form>
+
+<div class="buttons" mat-dialog-action [align]="'end'">
+    <button style="margin-right: 20px;" mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button class="save" mat-raised-button color="primary" (click)="addStudent()">{{actionBtn}}</button>
+</div>
